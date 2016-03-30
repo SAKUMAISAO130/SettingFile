@@ -13,30 +13,38 @@ export PATH="$PATH:$HOME/.rvm/bin"
 ####################
 # git settings
 ####################
-#source /usr/local/etc/bash_completion.d/git-prompt.sh
-#source /usr/local/git/contrib/completion/git-completion.bash
-#GIT_PS1_SHOWDIRTYSTATE=true
-#export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
+source /usr/local/git/contrib/completion/git-prompt.sh
+source /usr/local/git/contrib/completion/git-completion.bash
+GIT_PS1_SHOWDIRTYSTATE=true
+export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
+
+if [ -f /opt/local/etc/bash_completion ]; then
+	. /opt/local/etc/bash_completion
+fi
+
+
+
+
 
 ####################
 # vim settings
 ####################
-"############## 表示系 ###############
-" 行番号
+############## 表示系 ###############
+# 行番号
 set number
-" モード表示
+# モード表示
 set showmode
-" タイトル表示
+# タイトル表示
 set title
-" ルーラー表示
+# ルーラー表示
 set ruler
-" 対応する括弧を表示
+# 対応する括弧を表示
 set showmatch
-" 対応する括弧のハイライト表示を5秒に設定
+# 対応する括弧のハイライト表示を5秒に設定
 set matchtime=5
-" 不可視文字を表示する
-"set list
-" 折り返し禁止
+# 不可視文字を表示する
+set list
+# 折り返し禁止
 set nowrap
 
 
