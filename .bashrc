@@ -1,7 +1,7 @@
 ####################
 # add user name color
 ####################
-PS1="\[\033[37m\]\h_\W_\u_\t \$\[\033[0m\] "
+#PS1="\[\033[37m\]\h_\W_\u_\t \$\[\033[0m\] "
 
 
 ####################
@@ -16,11 +16,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 source /usr/local/git/contrib/completion/git-prompt.sh
 source /usr/local/git/contrib/completion/git-completion.bash
 GIT_PS1_SHOWDIRTYSTATE=true
-export PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
-
-if [ -f /opt/local/etc/bash_completion ]; then
-	. /opt/local/etc/bash_completion
-fi
+export PS1='\[\033[37m\]╭─● \u@\h:\[\033[36m\]\w\[\033[33m\]$(__git_ps1)\[\033[00m\]\n\[\033[37m\]╰─➤ '
 
 
 
@@ -74,4 +70,9 @@ alias gs='git status'
 alias gcm='git checkout master'
 alias gpom='git pull origin master'
 alias gmm='git merge master'
+
+
+
+
+
 
