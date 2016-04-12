@@ -16,7 +16,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 source /usr/local/git/contrib/completion/git-prompt.sh
 source /usr/local/git/contrib/completion/git-completion.bash
 GIT_PS1_SHOWDIRTYSTATE=true
-export PS1='\[\033[37m\]╭─● \u@\h:\[\033[36m\]\w\[\033[33m\]$(__git_ps1)\[\033[00m\]\n\[\033[37m\]╰─➤ '
+export PS1='\[\033[32m\]╭─● \[\033[37m\]\u@\h:\[\033[36m\]\w\[\033[33m\]$(__git_ps1)\[\033[00m\]\n\[\033[32m\]╰─➤ '
 
 
 
