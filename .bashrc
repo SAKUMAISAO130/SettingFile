@@ -72,7 +72,3 @@ alias gpom='git pull origin master'
 alias gmm='git merge master'
 
 
-
-
-
-
